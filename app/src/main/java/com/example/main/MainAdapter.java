@@ -11,6 +11,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+//메인화면 어댑터
+//메인화면과 내 글 목록 화면(심부름, 신고)의 카드뷰 내용은 같으므로 그대로 사용할 수 있음?
+
 public class MainAdapter extends RecyclerView.Adapter<MainAdapter.CustomViewHolder> {
 
     private ArrayList<MainData> arrayList;
@@ -68,10 +71,10 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.CustomViewHold
 
         public CustomViewHolder(@NonNull View itemView) {
             super(itemView);
-            this.tag = (TextView) itemView.findViewById(R.id.Tag);
-            this.title = (TextView) itemView.findViewById(R.id.Title);
-            this.date = (TextView) itemView.findViewById(R.id.Date);
-            this.nname = (TextView) itemView.findViewById(R.id.Nname);
+            this.tag = (TextView) itemView.findViewById(R.id.wTag);
+            this.title = (TextView) itemView.findViewById(R.id.wTitle);
+            this.date = (TextView) itemView.findViewById(R.id.wDate);
+            this.nname = (TextView) itemView.findViewById(R.id.wNname);
         }
     }
 }

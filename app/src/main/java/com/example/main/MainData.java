@@ -1,49 +1,53 @@
 package com.example.main;
 
+//메인화면
+//리스트에 들어가는 데이터 선언
+//메인화면과 내 글 목록 화면(심부름, 신고)의 카드뷰 내용은 같으므로 그대로 사용할 수 있음?
+
 public class MainData {
 
-    private String Tag;
-    private String Title;
-    private String Date;
-    private String Nname;
+    private String wTag;
+    private String wTitle;
+    private String wDate;
+    private String wNname;
 
     public MainData(String tag, String title, String date, String nname) {
-        Tag = tag;
-        Title = title;
-        Date = date;
-        Nname = nname;
+        wTag = tag;
+        wTitle = title;
+        wDate = date;
+        wNname = nname;
     }
 
     public String getTag() {
-        return Tag;
+        return wTag;
     }
 
     public void setTag(String tag) {
-        Tag = tag;
+        wTag = tag;
     }
 
     public String getTitle() {
-        return Title;
+        return wTitle;
     }
 
     public void setTitle(String title) {
-        Title = title;
+        wTitle = title;
     }
 
     public String getDate() {
-        return Date;
+        return wDate;
     }
 
     public void setDate(String date) {
-        Date = date;
+        wDate = date;
     }
 
     public String getNname() {
-        return Nname;
+        return wNname;
     }
 
     public void setNname(String nname) {
-        Nname = nname;
+        wNname = nname;
     }
 }
 

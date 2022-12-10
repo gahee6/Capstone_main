@@ -6,6 +6,10 @@
     android:layout_margin="10dp"
     app:cardCornerRadius="10dp" >
 
+    //메인화면 카드뷰
+    //카드뷰를 이용하여 하나의 글 목록 화면 구헌
+    //메인화면과 내 글 목록 화면(심부름, 신고)의 카드뷰 내용은 같으므로 그대로 사용할 수 있음?
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,14 +23,14 @@
             android:layout_marginBottom="17dp">
 
             <TextView
-                android:id="@+id/Tag"
+                android:id="@+id/wTag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="#해시태그"
                 />
 
             <TextView
-                android:id="@+id/Nname"
+                android:id="@+id/wNname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="닉네임"
@@ -34,19 +38,13 @@
 
         </RelativeLayout>
 
-        //TextView
-            //android:id="@+id/Tag"
-            //android:layout_width="wrap_content" android:layout_height="wrap_content"
-            android:text="#해시태그"
-            android:layout_marginBottom="10dp"/>
-
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"     
             android:orientation="horizontal" >
 
             <TextView
-                android:id="@+id/Title"
+                android:id="@+id/wTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="제목"
@@ -55,7 +53,7 @@
                 android:textColor="@color/black"/>
 
             <TextView
-                android:id="@+id/Date"
+                android:id="@+id/wDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="날짜"

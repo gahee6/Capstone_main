@@ -8,6 +8,8 @@ import android.os.Bundle;
 
 import java.util.ArrayList;
 
+//메인화면
+
 public class MainActivity extends AppCompatActivity {
 
     private ArrayList<MainData> arrayList;
@@ -20,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        recyclerView = (RecyclerView) findViewById(R.id.rv);
+        recyclerView = (RecyclerView) findViewById(R.id.MainRv);
         linearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
 
